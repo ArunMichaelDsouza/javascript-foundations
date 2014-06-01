@@ -5,7 +5,7 @@ function run ()
 	var compute = ((13+2)*34-2);
 	console.log(compute);
 
-	var string = "blablablablablabla".length;
+	var string = "IlovemyMacbookPro".length;
 	console.log(string);
 }
 
