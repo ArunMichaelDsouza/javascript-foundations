@@ -7,6 +7,10 @@ function run ()
 
 	var string = "IlovemyMacbookPro".length;
 	console.log(string);
+
+	var string1 = "Hello";
+	var string2 = "World";
+	console.log(string1+" "+string2+"!");
 }
 
 run(); 
