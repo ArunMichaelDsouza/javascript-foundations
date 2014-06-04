@@ -11,6 +11,12 @@ function run ()
 	var string1 = "Hello";
 	var string2 = "World";
 	console.log(string1+" "+string2+"!");
+
+	var num = 10;
+	console.log(num+=10);
+	console.log(num-=10);
+	console.log(num*=10);
+	console.log(num/=10);
 }
 
 run(); 
