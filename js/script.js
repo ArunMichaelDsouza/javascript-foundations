@@ -36,6 +36,11 @@ function run ()
 		console.log(value);
 		value++;
 	}
+
+	for(value=1; value<=10; value++)
+	{
+		console.log(value);
+	}
 }
 
 run(); 
