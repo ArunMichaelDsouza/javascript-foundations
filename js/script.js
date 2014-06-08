@@ -126,6 +126,14 @@ list.push("three");
 list.push("four");
 console.log(list);
 
+var name = "Santa Claus";
+
+var combo1 = ["abc", 123, "def"];
+var combo2 = [name, 234];
+
+var multi = [combo1, combo2];
+console.log(multi);
+
 
 
 
