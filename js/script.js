@@ -122,6 +122,9 @@ for(i = 0; i <= list.length-1; i++) {
 list.pop();
 console.log(list);
 
+list.push("three");
+list.push("four");
+console.log(list);
 
 
 
