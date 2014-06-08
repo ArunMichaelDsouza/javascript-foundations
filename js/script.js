@@ -22,6 +22,8 @@ function run ()
 	var str2 = "Adasdasdasdasd";
 
 	console.log(str1==str2);
+
+	console.log(str2[0]);
 }
 
 run(); 
