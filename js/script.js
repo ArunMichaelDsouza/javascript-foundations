@@ -84,8 +84,9 @@ trains();
 
 // Built in Dialogs and Popups
 
+var name;
+
 function username() {
-	var name;
 	if(name = prompt("What is your name ?")) {
 		if(confirm("Are you sure your name is "+name)) {
 			alert("Sup "+name);
@@ -97,10 +98,11 @@ function username() {
 	else {
 		username();
 	}	
-	console.log(name);
 }
 
 username();
+console.log(name);
+
 
 
 
