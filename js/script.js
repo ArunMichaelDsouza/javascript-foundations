@@ -44,6 +44,7 @@ run();
 
 function trains(){
 	var totalTrains = 12;
+	var specialTrain = 10;
 	var operationalTrains = 8;
 
 	// var i = 1;
@@ -60,6 +61,9 @@ function trains(){
 	for(i = 1; i <= totalTrains; i++) {
 		if(i <= operationalTrains) {
 			console.log("Train #"+i+" is operational");
+		}
+		else if(i==specialTrain){
+			console.log("Train #"+i+" starts at noon");
 		}
 		else {
 			console.log("Train #"+i+" is not operational");
