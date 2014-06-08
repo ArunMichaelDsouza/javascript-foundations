@@ -97,6 +97,7 @@ function username() {
 	else {
 		username();
 	}	
+	console.log(name);
 }
 
 username();
