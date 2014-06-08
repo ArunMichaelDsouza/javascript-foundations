@@ -44,8 +44,10 @@ run();
 
 function trains(){
 	var totalTrains = 12;
-	var specialTrain = 10;
+	var specialTrain1 = 10;
+	var specialTrain2 = 12;
 	var operationalTrains = 8;
+	var dayOfWeek = "Wed";
 
 	// var i = 1;
 	// for(i = 1; i <= operationalTrains; i++) {
@@ -59,11 +61,14 @@ function trains(){
 	//Optimising above approach
 
 	for(i = 1; i <= totalTrains; i++) {
-		if(i <= operationalTrains) {
+		if(i <= operationalTrains && i != 3) {
 			console.log("Train #"+i+" is operational");
 		}
-		else if(i==specialTrain){
+		else if(i == specialTrain1 || i == specialTrain2){
 			console.log("Train #"+i+" starts at noon");
+		}
+		else if(i == 3 && dayOfWeek == "Sun") {
+			console.log("Train #"+i+" is operational");
 		}
 		else {
 			console.log("Train #"+i+" is not operational");
