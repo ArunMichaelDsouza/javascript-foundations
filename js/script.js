@@ -29,6 +29,13 @@ function run ()
 
 	num = 12345;
 	console.log(num);
+
+	var value = 1;
+	while(value<=10)
+	{
+		console.log(value);
+		value++;
+	}
 }
 
 run(); 
