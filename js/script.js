@@ -17,6 +17,11 @@ function run ()
 	console.log(num-=10);
 	console.log(num*=10);
 	console.log(num/=10);
+
+	var str1 = "asdasdasdsadasdasdsad";
+	var str2 = "Adasdasdasdasd";
+
+	console.log(str1==str2);
 }
 
 run(); 
