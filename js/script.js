@@ -115,7 +115,7 @@ console.log(quine);
 //Arrays
 
 var list = ["one", "two", "three"];
-for(i = 0; i <= list.length-1; i++) {
+for(i = 0; i < list.length; i++) {
 	console.log(list[i]);
 }
 
@@ -138,6 +138,25 @@ console.log(multi[1]);
 
 console.log(multi[1][0]);
 
+
+function oddandeven() {
+	var test = [10, 234, 2, 67, 78, 34];
+	console.log(test);
+	var count = 0;
+	for(i=0; i < test.length; i++) {
+		if(test[i]%2 == 0) {
+			count++;
+		}
+		else {
+			test[i] = undefined;
+		}
+	}
+
+	console.log(count);
+	console.log(test);
+}
+
+oddandeven();
 
 
 
