@@ -18,12 +18,14 @@ function run ()
 	console.log(num*=10);
 	console.log(num/=10);
 
-	var str1 = "asdasdasdsadasdasdsad";
+	var str1 = "asdas dasdsadasdasdsad";
 	var str2 = "Adasdasdasdasd";
 
 	console.log(str1==str2);
 
 	console.log(str2[0]);
+
+	console.log(str1.charAt(5));
 }
 
 run(); 
