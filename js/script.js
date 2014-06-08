@@ -103,7 +103,14 @@ function username() {
 username();
 console.log(name);
 
+// Quine
+//Print from here
+function quine() {
+	//Demo to implement a Quine program
+}
+//till here, in console
 
+console.log(quine);
 
 
 
