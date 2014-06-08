@@ -134,6 +134,10 @@ var combo2 = [name, 234];
 var multi = [combo1, combo2];
 console.log(multi);
 
+console.log(multi[1]);
+
+console.log(multi[1][0]);
+
 
 
 
