@@ -1,7 +1,6 @@
 // Basic Operations
 
-function run ()
-{
+function run() {
 	var compute = ((13+2)*34-2);
 	console.log(compute);
 
@@ -31,17 +30,52 @@ function run ()
 	console.log(num);
 
 	var value = 1;
-	while(value<=10)
-	{
+	while(value <= 10) {
 		console.log(value);
 		value++;
 	}
 
-	for(value=1; value<=10; value++)
-	{
+	for(value = 10; value >=1; value--) {
 		console.log(value);
 	}
 }
 
 run(); 
+
+function trains(){
+	var totalTrains = 12;
+	var operationalTrains = 8;
+
+	var i = 1;
+	for(i=1; i<=operationalTrains; i++) {
+		console.log("Train #"+i+" is operational");
+	}
+
+	for(i=operationalTrains+1; i<=totalTrains; i++) {
+		console.log("Train #"+i+" is not operational");
+	}
+
+}
+
+trains();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
