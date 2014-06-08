@@ -46,13 +46,24 @@ function trains(){
 	var totalTrains = 12;
 	var operationalTrains = 8;
 
-	var i = 1;
-	for(i=1; i<=operationalTrains; i++) {
-		console.log("Train #"+i+" is operational");
-	}
+	// var i = 1;
+	// for(i = 1; i <= operationalTrains; i++) {
+	// 	console.log("Train #"+i+" is operational");
+	// }
 
-	for(i=operationalTrains+1; i<=totalTrains; i++) {
-		console.log("Train #"+i+" is not operational");
+	// for(i = operationalTrains+1; i <= totalTrains; i++) {
+	// 	console.log("Train #"+i+" is not operational");
+	// }
+
+	//Optimising above approach
+
+	for(i = 1; i <= totalTrains; i++) {
+		if(i <= operationalTrains) {
+			console.log("Train #"+i+" is operational");
+		}
+		else {
+			console.log("Train #"+i+" is not operational");
+		}
 	}
 
 }
