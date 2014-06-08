@@ -112,7 +112,12 @@ function quine() {
 
 console.log(quine);
 
+//Arrays
 
+var list = ["one", "two", "three"];
+for(i = 0; i <= list.length-1; i++) {
+	console.log(list[i]);
+}
 
 
 
