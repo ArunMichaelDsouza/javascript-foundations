@@ -26,6 +26,9 @@ function run ()
 	console.log(str2[0]);
 
 	console.log(str1.charAt(5));
+
+	num = 12345;
+	console.log(num);
 }
 
 run(); 
