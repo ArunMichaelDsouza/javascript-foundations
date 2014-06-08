@@ -42,6 +42,9 @@ function run() {
 
 run(); 
 
+
+// Loops and Conditionals
+
 function trains(){
 	var totalTrains = 12;
 	var specialTrain1 = 10;
@@ -78,6 +81,25 @@ function trains(){
 }
 
 trains();
+
+// Built in Dialogs and Popups
+
+function username() {
+	var name;
+	if(name = prompt("What is your name ?")) {
+		if(confirm("Are you sure your name is "+name)) {
+			alert("Sup "+name);
+		}
+		else {
+			username();
+		}
+	}
+	else {
+		username();
+	}	
+}
+
+username();
 
 
 
