@@ -212,8 +212,9 @@ console.log(delpassengerList);
 
 // Fetching and Changing Element Styles 
 
-document.getElementById("test").style.background = "#000";
-document.getElementById("test").style.color = "#fff";
+var mydiv = document.getElementById("test");
+mydiv.style.background = "#000";
+mydiv.style.color = "#fff";
 
 
 
