@@ -20,7 +20,7 @@ function run() {
 	var str1 = "asdas dasdsadasdasdsad";
 	var str2 = "Adasdasdasdasd";
 
-	console.log(str1==str2);
+	console.log(str1 == str2);
 
 	console.log(str2[0]);
 
@@ -40,7 +40,8 @@ function run() {
 	}
 }
 
-run(); 
+run();
+
 
 
 // Loops and Conditionals
@@ -77,10 +78,12 @@ function trains(){
 			console.log("Train #"+i+" is not operational");
 		}
 	}
-
+	return;
 }
 
 trains();
+
+
 
 // Built in Dialogs and Popups
 
@@ -97,20 +100,27 @@ function username() {
 	}
 	else {
 		username();
-	}	
+	}
+	return;
 }
 
 username();
 console.log(name);
 
+
+
 // Quine
+
 //Print from here
 function quine() {
 	//Demo to implement a Quine program
+	return;
 }
 //till here, in console
 
 console.log(quine);
+
+
 
 //Arrays
 
@@ -154,12 +164,49 @@ function oddandeven() {
 
 	console.log(count);
 	console.log(test);
+	return;
 }
-
 oddandeven();
 
+var passengerList = ["string1", "string2", "string3", undefined, "string4"];
+
+function addpassenger (passenger, hola) {
+	if(hola.length == 0 ) {
+		hola.push(passenger);
+	}
+	else {
+		for(var j=0; j < hola.length; j++) {
+			if(hola[j] == undefined) {
+				hola[j] = passenger;
+				return;
+			}
+			else if(j == hola.length-1) {
+				hola.push(passenger);
+				return;
+			}
+		}
+	}
+}
+addpassenger("Cody",passengerList);
+console.log(passengerList);
 
 
+function deletepassenger(name, dellist) {
+	for(var j=0; j < dellist.length; j++) {
+		if(dellist[j] == name) {
+			dellist[j] = undefined;
+			return;
+		}
+		else {
+			console.log("Passenger not found");
+			return;
+		}
+	}
+}
+var delpassengerList = ["arun", "varun", "tarun"];
+var delname = "arun";
+deletepassenger(delname, delpassengerList);
+console.log(delpassengerList);
 
 
 
