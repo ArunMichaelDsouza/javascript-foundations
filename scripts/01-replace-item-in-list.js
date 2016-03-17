@@ -1,4 +1,4 @@
-/* Algorithm to replace items in list
+/* Algorithm to replace item in list
 
 Pseudo code : 
 1 begin
@@ -13,9 +13,11 @@ Pseudo code :
   itemToInsert = 199
 
 5 perform linear search in list
-  find(itemToReplace in list)
+  find(itemToReplace in list) // Compare each item with ItemToReplace one by one
+  if list[i] == itemToReplace
+    return list[i]
 
-6 add value to be inserted in list
+6 if found, add value to be inserted in list
   insert(itemToInsert in list[position of itemToReplace])
 
 7 end
