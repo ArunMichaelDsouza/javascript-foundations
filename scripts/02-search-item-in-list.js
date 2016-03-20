@@ -19,12 +19,6 @@ Linear Search
 6 if found, return search result
 
 7 end
-
-Binary Search
-1 begin
-
-2 set initial values in list 
-  list = [787,123,4444, 1277, 33, 45]
 */
 
 // Implementation
