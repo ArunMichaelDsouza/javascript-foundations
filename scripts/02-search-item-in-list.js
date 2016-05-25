@@ -26,21 +26,20 @@ Linear Search
 (function() {
 	'use strict';
 
-	var list = [22,67,12,4,99,33,54,678,32,998], itemToSearch = 33;
+	var list = [22,67,12,4,99,33,54,678,32,998], 
+		itemToSearch = 443;
 
-	var callback = function(foundFlag, position) {
-		foundFlag ? console.log('Item found at position : '+position) : console.log('Item not found!');
-	};
+	function loopEnd() {
+		console.log('Item not found!');
+	}
 	
-	var linearSearch = function(list, item) {
-		var found = false, i = 0;
-		for(i; i<list.length || found || callback(found); i++) {
-			if(list[i] == item) {
-				found = true;
-				return callback(found, i);
+	function linearSearch(list, item) {
+		for(var i=0; i<list.length || loopEnd(); i++) {
+			if(list[i] === item) {
+				return 'Item found at position : '+parseInt(i+1);
 			}
 		}
-	};
+	}
 
 	console.log(linearSearch(list, itemToSearch));
 })();
