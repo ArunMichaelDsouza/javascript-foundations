@@ -27,7 +27,7 @@ Linear Search
 	'use strict';
 
 	var list = [22,67,12,4,99,33,54,678,32,998], 
-		itemToSearch = 443;
+		itemToSearch = 12;
 
 	function loopEnd() {
 		console.log('Item not found!');
