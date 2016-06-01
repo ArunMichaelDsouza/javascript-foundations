@@ -1,8 +1,6 @@
 /* Algorithm to search item in list
 
 Pseudo code : 
-
-Linear Search 
 1 begin
 
 2 set initial values in list 
