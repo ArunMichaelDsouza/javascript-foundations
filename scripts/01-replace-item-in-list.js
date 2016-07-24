@@ -26,15 +26,14 @@ Pseudo code :
 // Implementation
 
 (function() {
-    "use strict";
+    'use strict';
 
     var itemsArray = [55, 34, 88, 45, 89, 102, 33, 12, 405],
         itemToReplace = 45,
         itemToInsert = 54;
     console.log("Original list : " + itemsArray);
-    for (var i = 0; i < itemsArray.length; i++) {
-        if (itemsArray[i] == itemToReplace)
-       		itemsArray[i] = itemToInsert;
+    for (var i = 0; i < itemsArray.length; i ++) {
+      itemsArray[i] === itemToReplace ? itemsArray[i] = itemToInsert : '';
     }
     console.log("Updated list : " + itemsArray);
 })();

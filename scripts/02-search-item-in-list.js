@@ -32,7 +32,7 @@ Pseudo code :
 	}
 	
 	function linearSearch(list, item) {
-		for(var i=0; i<list.length || loopEnd(); i++) {
+		for(var i = 0; i < list.length || loopEnd(); i ++) {
 			if(list[i] === item) {
 				return 'Item found at position : '+parseInt(i+1);
 			}
