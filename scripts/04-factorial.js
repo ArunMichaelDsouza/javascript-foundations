@@ -11,7 +11,7 @@ Pseudo code :
 4 set factorial value to 1
 
 5 keep multiplying the iterator to the factorial value and save it back to this value
-  factorial = fcatorial * iterator
+  factorial = factorial * iterator
 
 6 stop once the iterator becomes bigger than the value and print out the result
   when iterator > value
@@ -25,11 +25,20 @@ Pseudo code :
 // Implementation
 
 (function() {
-	var num = 12, factorial = 1;
+    'use strict';
 
-	for(var i=1; i<=num; i++) {
-		factorial *= i;
-	}
+    // Declare variables
+    var num = 12,
+        factorial = 1;
 
-	console.log('Factorial of '+num+' is : '+factorial);
+    // Calculate factorial
+    function findFactorial(num) {
+        for (var i = 1; i <= num; i++) {
+            factorial *= i;
+        }
+        return factorial;
+    }
+
+    // Print factorial of number
+    console.log('Factorial of ' + num + ' is : ' + findFactorial(num));
 })();
