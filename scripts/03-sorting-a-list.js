@@ -7,7 +7,6 @@ Pseudo code :
   list = [3, 1, 25, 2, 4, 3245, 12, 66, 0, 67, 112]
 
 3 perform selection sort on list
-
   loop from first to last position of list with iterator i
   set first position value as minimum
   min = i
