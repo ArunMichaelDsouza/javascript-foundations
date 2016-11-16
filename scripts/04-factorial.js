@@ -32,13 +32,10 @@ Pseudo code :
         factorial = 1;
 
     // Calculate factorial
-    function findFactorial(num) {
-        for (var i = 1; i <= num; i++) {
-            factorial *= i;
-        }
-        return factorial;
+    while(num > 0) {
+      factorial *= num; num--;
     }
 
     // Print factorial of number
-    console.log('Factorial of ' + num + ' is : ' + findFactorial(num));
+    console.log('Factorial is : ' + factorial);
 })();
