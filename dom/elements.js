@@ -8,21 +8,27 @@
         createElement: function(element) {
             var el = d.createElement(element.type);
             el.innerText = element.text;
-            Object.keys(element.styles).forEach(function(property) {
-                el.style[property] = element.styles[property];
-            });
+
+            try {
+                Object.keys(element.styles).forEach(function(property) {
+                    el.style[property] = element.styles[property];
+                });
+            }
+            catch(err) {
+                return el;
+            }
 
             return el;
         },
         insertAfter: function(newNode, baseNode) {
-            baseNode.parentNode.insertBefore(newNode, baseNode.nextSibling);
+            return baseNode.parentNode.insertBefore(newNode, baseNode.nextSibling);
         }
     };
 
 
-    var button = {
+    var button1 = {
     	type: 'button',
-    	text: 'Dynamic button',
+    	text: 'Styled',
     	styles: {
     		backgroundColor: '#50a4e2',
     		color: '#fff',
@@ -32,8 +38,17 @@
     	}
     }
 
-    var dynamicButton = LIB.createElement(button),
+    var styledButton = LIB.createElement(button1),
         list = d.querySelector('.list');
 
-    LIB.insertAfter(dynamicButton, list);
+    LIB.insertAfter(styledButton, list);
+
+    var listParent = list.parentNode,
+        button2 = {
+            type: 'button',
+            text: 'Simple'
+        };  
+    
+    var simpleButton = LIB.createElement(button2);
+    listParent.insertBefore(simpleButton, list);
 })(document);
