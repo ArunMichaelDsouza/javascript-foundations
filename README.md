@@ -1,3 +1,4 @@
-# JavaScript Algorithms 
+# JavaScript Foundations 
 
-JS algorithmic practice problems
+* Algorithms `/scripts`
+* DOM Manipulation `/dom`
