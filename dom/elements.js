@@ -64,5 +64,9 @@
         deletee = list,
         deleteeParent = listParent;
 
+    deletor.setAttribute('id', 'remove-list');
+
+    var deletor = d.querySelector('#remove-list');
+
     deletor.addEventListener('click', LIB.removeElement.bind(null, deleteeParent, deletee));
 })(document);
