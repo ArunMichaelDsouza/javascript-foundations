@@ -2,8 +2,6 @@
 (function(d) {
     'use strict';
 
-    /* Dynamic element creation and event attaching
-    -------------------------------------------- */
     var LIB = {
         createElement: function(element) {
             var el = d.createElement(element.type);
@@ -20,12 +18,18 @@
 
             return el;
         },
+
         insertAfter: function(newNode, baseNode) {
             return baseNode.parentNode.insertBefore(newNode, baseNode.nextSibling);
+        },
+
+        removeElement: function(parent, element) {
+            parent.removeChild(element);
         }
     };
 
-
+    /* Dynamic element creation and event attaching
+    -------------------------------------------- */
     var button1 = {
     	type: 'button',
     	text: 'Styled',
@@ -51,4 +55,14 @@
     
     var simpleButton = LIB.createElement(button2);
     listParent.insertBefore(simpleButton, list);
+
+
+    
+    /* Dynamic element attribute attaching and removal
+    ----------------------------------------------- */    
+    var deletor = d.querySelector('.remove-list'),
+        deletee = list,
+        deleteeParent = listParent;
+
+    deletor.addEventListener('click', LIB.removeElement.bind(null, deleteeParent, deletee));
 })(document);
