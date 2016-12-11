@@ -23,8 +23,8 @@
             return baseNode.parentNode.insertBefore(newNode, baseNode.nextSibling);
         },
 
-        removeElement: function(parent, element) {
-            parent.removeChild(element);
+        removeElement: function(element) {
+            element.parentNode.removeChild(element);
         }
     };
 
@@ -61,12 +61,11 @@
     /* Dynamic element attribute attaching and removal
     ----------------------------------------------- */    
     var deletor = d.querySelector('.remove-list'),
-        deletee = list,
-        deleteeParent = listParent;
+        deletee = list;
 
     deletor.setAttribute('id', 'remove-list');
 
     var deletor = d.querySelector('#remove-list');
 
-    deletor.addEventListener('click', LIB.removeElement.bind(null, deleteeParent, deletee));
+    deletor.addEventListener('click', LIB.removeElement.bind(null, deletee));
 })(document);
