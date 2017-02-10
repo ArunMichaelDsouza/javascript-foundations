@@ -2,7 +2,9 @@
 (function(d) {
     'use strict';
 
+    // DOM manipulation library
     var LIB = {
+        // Create a new element with specifications
         createElement: function(element) {
             var el = d.createElement(element.type);
             el.innerText = element.text;
@@ -19,10 +21,12 @@
             return el;
         },
 
+        // Insert after a specified element
         insertAfter: function(newNode, baseNode) {
             return baseNode.parentNode.insertBefore(newNode, baseNode.nextSibling);
         },
 
+        // Remove an element
         removeElement: function(element) {
             element.parentNode.removeChild(element);
         }
