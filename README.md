@@ -1,5 +1,6 @@
 # JavaScript Foundations 
 
-* Algorithms `/scripts`
+* Algorithms `/algorithms`
 * DOM Manipulation `/dom`
 * Practice Problems `/exercises`
+* Scripts `/scripts`
